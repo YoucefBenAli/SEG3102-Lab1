@@ -1,0 +1,40 @@
+<table>
+    <tr>
+      <td>
+        <label for="num1">First Number:</label>
+      </td>
+      <td>
+        <input name="num1" id="num1" [(ngModel)]="firstValue" #num1>
+      </td>
+    </tr>
+    <tr>
+        <td>
+          <label for="num2">First Number:</label>
+        </td>
+        <td>
+          <input name="num2" id="num2" [(ngModel)]="secondValue" #num2>
+        </td>
+    <tr>
+
+    <tr>
+        <td>
+            <label for="num3">Result:</label>
+        </td>
+        <td>
+            <input name="num3" id="num3" [(ngModel)]="result" #num2>
+        </td>
+    <tr>
+      <td>
+        <button (click)="addition()">Addition</button>
+      </td>
+      <td>
+        <button (click)="subtraction()">Subtraction</button>
+      </td>
+      <td>
+        <button (click)="multiplication()">Multiplication</button>
+      </td>
+      <td>
+        <button (click)="division()">Division</button>
+      </td>
+    </tr>
+  </table>
